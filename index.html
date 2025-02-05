@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Memory Challenge</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <h1>Color Guessing Game</h1>
+    <div class="color-box" id="colorBox" data-testid="colorBox"></div>
+    <p class="message" id="gameInstructions" data-testid="gameInstructions">Guess the correct color!</p>
+    <div class="color-options" id="colorOptions"></div>
+    <p>Score: <span id="score" data-testid="score">0</span></p>
+    <p class="timer">Time Left: <span id="timer">30</span> seconds</p>
+    <div class="buttons">
+      <button id="newGameButton" data-testid="newGameButton">New Game</button>
+      <button id="resetButton">Reset</button>
+      <button id="muteButton">
+        <i id="muteIcon" class="fas fa-volume-up"></i>
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
